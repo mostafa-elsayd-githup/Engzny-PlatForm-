@@ -10,8 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@tanstack/react-query": "^5.107.1",
+    "axios": "^1.21.1",
+    "lucide-react": "^1.71.0",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "react-form-hook": "^0.0.1",
+    "react-router": "^8.5.1",
+    "sonner": "^2.0.8",
+    "tailwindcss": "^4.3.5",
+    "zod": "^4.6.7",
+    "zustand": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",

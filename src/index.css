@@ -3,13 +3,15 @@
 :root {
   --BrandEmerald-Color: #10b981;
   --Brand-Emerald-Dark: #047857;
-  --shadow: #10b981 0 10px 15px -3px, #047857 0 4px 6px -2px;
+  --shadow: #10b981 0 5px 15px -3px, #047857 0 4px 6px -2px;
   --bg-canvas: #0e1218;
   --card-surface: #161b22;
   --border-color: #1e293b;
   --Primary-color: #0f172a;
   --text-primary: #f3f4f6;
   --text-muted: #94a3b8;
+  --iconList-color:#60a5fa;
+  --iconRate-color:#f9be23;
   letter-spacing: 0.18px;
   line-height: 1.5;
   text-rendering: optimizeLegibility;

@@ -1,0 +1,8 @@
+
+function AdminServicesPage() {
+  return (
+    <div>AdminServicesPage</div>
+  )
+}
+
+export default AdminServicesPage

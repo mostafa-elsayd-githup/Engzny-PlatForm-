@@ -1,8 +1,11 @@
+import AdminTable from "../../components/Admin/AdminOrdersComponent/AdminTable";
 
 function AdminOrdersPage() {
   return (
-    <div>AdminOrdersPage</div>
-  )
+    <section>
+      <AdminTable />
+    </section>
+  );
 }
 
-export default AdminOrdersPage
+export default AdminOrdersPage;

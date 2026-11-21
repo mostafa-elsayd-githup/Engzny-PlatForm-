@@ -37,7 +37,7 @@ function PlatformStatistics() {
     },
   ];
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 p-4">
+    <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 py-4">
       {PlatformStatisticsList.map((item) => (
         <div
           key={item.id}

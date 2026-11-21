@@ -11,34 +11,32 @@ import { useContext } from "react";
 import SidebarContext from "../../context/contextStore";
 
 function AdminSidebar() {
-  const navList: navBarList[] = [
-    {
-      id: 1,
-      path: "orders",
-      namePage: "ادارة الطلبات والشبكه",
-      icon: <LayoutPanelLeft size={20} className="inline ml-2" />,
-    },
-    {
-      id: 2,
-      path: "worker",
-
-      namePage: "ادراه الفنيين",
-      icon: <Users2 size={20} className="inline ml-2" />,
-    },
-    {
-      id: 3,
-      path: "services",
-
-      namePage: "كتالوج الخدمات والاسعار",
-      icon: <Layers2 size={20} className="inline ml-2" />,
-    },
-    {
-      id: 4,
-      path: "financials",
-      namePage: "التقارير والماليات",
-      icon: <TrendingUp size={20} className="inline ml-2" />,
-    },
-  ];
+const navList: navBarList[] = [
+  {
+    id: 1,
+    path: "/admin",
+    namePage: "إدارة الطلبات والشبكة",
+    icon: <LayoutPanelLeft size={20} className="inline ml-2" />,
+  },
+  {
+    id: 2,
+    path: "/admin/worker",
+    namePage: "إدارة الفنيين",
+    icon: <Users2 size={20} className="inline ml-2" />,
+  },
+  {
+    id: 3,
+    path: "/admin/services",
+    namePage: "كتالوج الخدمات والأسعار",
+    icon: <Layers2 size={20} className="inline ml-2" />,
+  },
+  {
+    id: 4,
+    path: "/admin/financials",
+    namePage: "التقارير والماليات",
+    icon: <TrendingUp size={20} className="inline ml-2" />,
+  },
+];
   const isOpen = useContext(SidebarContext)?.isOpen;
 
   return (
@@ -63,6 +61,7 @@ function AdminSidebar() {
                 <li key={item.id}>
                   <NavLink
                     to={item.path}
+                    end={item.path === "/admin"}
                     className={({ isActive }) =>
                       `text-xs py-1 px-2 leading-5 md:py-2 md:px-4 md:text-lg rounded-2xl block transition-all ${isActive ? "bg-(--BrandEmerald-Color) text-black  shadow-(--shadow)" : "hover:bg-(--card-surface) "}`
                     }

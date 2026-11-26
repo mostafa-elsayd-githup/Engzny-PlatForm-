@@ -10,7 +10,7 @@ export default function AdminLayout() {
     <SidebarProvider>
       <div className="flex">
         <AdminSidebar />
-        <main className="flex-1">
+        <main className="flex-1 px-4 overflow-hidden">
           <Header />
           <PlatformStatistics />
           <Outlet />

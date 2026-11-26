@@ -41,7 +41,7 @@ const navList: navBarList[] = [
 
   return (
     <section
-      className={`${isOpen ? "translate-x-72 absolute" : "translate-x-0"} duration-200 p-4 bg-(--card-surface)`}
+      className={`duration-200 p-4 bg-(--card-surface) transition-transform ${isOpen ? "translate-x-72 absolute": "translate-x-0"} lg:translate-x-0 lg:static`}
     >
       <div className="w-30 md:w-60">
         <div className="w-30 flex flex-col md:flex-row items-center ">

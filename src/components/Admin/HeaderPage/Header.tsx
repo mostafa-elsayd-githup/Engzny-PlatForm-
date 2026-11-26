@@ -18,7 +18,7 @@ function Header() {
       <div className="flex items-center gap-4">
         <RefreshCw size={20} className="cursor-pointer hover:animate-spin" />
         <BellDot size={20} className="cursor-pointer" />
-        <button onClick={toggle} className="cursor-pointer">
+        <button onClick={toggle} className="lg:hidden cursor-pointer ">
           <span className="">
             {isOpen ? <Menu size={20} /> : <X size={20} />}
           </span>

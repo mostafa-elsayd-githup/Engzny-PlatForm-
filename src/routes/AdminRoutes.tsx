@@ -1,26 +1,10 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
-import LandingPage from "../pages/LandingPage";
+
 import AdminLayout from "../layouts/AdminLayout";
-import RegisterPage from "../pages/auth/RegisterPage";
-import LoginPage from "../pages/auth/loginPage";
 import AdminWorkersPage from "../pages/Admin/AdminWorkersPage";
 import AdminOrdersPage from "../pages/Admin/AdminOrdersPage";
 import AdminFinancialsPage from "../pages/Admin/AdminFinancialsPage";
 import AdminServicesPage from "../pages/Admin/AdminServicesPage";
-function AdminRoutes() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <LandingPage />,
-    },
-    {
-      path: "/login",
-      element: <LoginPage />,
-    },
-    {
-      path: "/register",
-      element: <RegisterPage />,
-    },
+  export const adminRouter = [
     {
       path: "admin",
       element: <AdminLayout />,
@@ -47,8 +31,5 @@ function AdminRoutes() {
         },
       ],
     },
-  ]);
-  return <RouterProvider router={router} />;
-}
+  ];
 
-export default AdminRoutes;

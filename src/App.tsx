@@ -1,11 +1,8 @@
+import { RouterProvider } from "react-router";
 import "./App.css";
-import AdminRoutes from "./routes/AdminRoutes";
+import { router } from "./routes";
 function App() {
-  return (
-    <>
-      <AdminRoutes />
-    </>
-  );
+return <RouterProvider router={router} />;
 }
 
 export default App;

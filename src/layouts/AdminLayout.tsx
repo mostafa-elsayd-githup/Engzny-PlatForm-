@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
-import AdminSidebar from "../components/Admin/SideBar";
+import AdminSidebar from "../components/Admin/AdminSidebar";
 import PlatformStatistics from "../components/Admin/PlatformStatistics/PlatformStatistics";
-import Header from "../components/Admin/HeaderPage/Header";
+import AdminHeader from "../components/Admin/AdminHeader/AdminHeader";
 import { SidebarProvider } from "../context/contextStore";
 
 
@@ -11,7 +11,7 @@ export default function AdminLayout() {
       <div className="flex">
         <AdminSidebar />
         <main className="flex-1 px-4 overflow-hidden">
-          <Header />
+          <AdminHeader />
           <PlatformStatistics />
           <Outlet />
         </main>

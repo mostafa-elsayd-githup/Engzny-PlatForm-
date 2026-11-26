@@ -2,12 +2,13 @@ import ClientLayout from "../layouts/ClientLayout";
 import MyAddress from "../pages/Client/MyAddress";
 import MyOrdersPage from "../pages/Client/MyOrdersPage";
 import NewOrderPage from "../pages/Client/NewOrderPage";
+import type { RouteTypeprops } from "../Types/router/RouteType";
 
-export const clientRoutes = [
+export const clientRoutes: RouteTypeprops[] = [
   {
     path: "client",
     element: <ClientLayout />,
-    children: [
+    children: ([
       {
         index: true,
         element: <NewOrderPage />,
@@ -23,6 +24,6 @@ export const clientRoutes = [
         element: <MyAddress />,
         handle: { title: "بيانات العميل والعناوين المحفوظة" },
       },
-    ],
+    ]),
   },
 ];

@@ -2,8 +2,9 @@ import WorkerLayout from "../layouts/WorkerLayout";
 import AvailableOrdersPage from "../pages/worker/AvailableOrdersPage";
 import ProfitsPage from "../pages/worker/ProfitsPage";
 import WorkerActiveTaskPage from "../pages/worker/WorkerActiveTaskPage";
+import type { RouteTypeprops } from "../Types/router/RouteType";
 
-export const workerRouter = [
+export const workerRouter:RouteTypeprops[] = [
   {
     path: "worker",
     element: <WorkerLayout />,

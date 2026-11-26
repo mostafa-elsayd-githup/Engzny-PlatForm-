@@ -4,7 +4,8 @@ import AdminWorkersPage from "../pages/Admin/AdminWorkersPage";
 import AdminOrdersPage from "../pages/Admin/AdminOrdersPage";
 import AdminFinancialsPage from "../pages/Admin/AdminFinancialsPage";
 import AdminServicesPage from "../pages/Admin/AdminServicesPage";
-  export const adminRouter = [
+import type { RouteTypeprops } from "../Types/router/RouteType";
+  export const adminRouter:RouteTypeprops[] = [
     {
       path: "admin",
       element: <AdminLayout />,

@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import WorkerHeader from "../components/Worker/WoerkerHeader/WorkerHeader";
+import WorkerHeader from "../components/Worker/WoerkerMainHeader/WorkerHeader";
 import { SidebarProvider } from "../context/contextStore";
 import WorkerSidebar from "../components/Worker/WorkerSidebar";
 import WorkerPlatformStatistics from "../components/Worker/WorkerPlatformStatistics/WorkerPlatformStatistics";
